@@ -4,6 +4,11 @@
   background: #e7e5e5;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 :root {
   --dark-blue-100: #609ed4;
   --dark-blue-200: #356ea9;
