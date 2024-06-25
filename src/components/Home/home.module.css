@@ -1,12 +1,47 @@
 .logo {
   width: 120px;
   height: 48px;
-  margin: 40px 40px 0 0;
+  margin: 40px 20px 0 0;
+}
+
+.container {
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .maincontainer {
-  margin-left: 80px;
-  margin-top: 168px;
+  margin-top: 50px;
+  width: 60%;
+}
+
+/* .textareaContainer { */
+
+.textarea {
+  width: 100%;
+  height: 500px;
+  resize: none;
+  border-radius: 24px;
+  padding: 50px;
+  border: 1px solid var(--gray-200);
+  transition: border 0.3s ease-in-out;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--dark-blue-400);
+}
+
+.textarea:focus,
+.textarea:active {
+  outline: none;
+  border: 1px solid var(--dark-blue-500);
+}
+
+.textarea::placeholder {
+  font-size: 32px;
+  font-weight: 400;
 }
 
 .actionsContainer {
@@ -18,14 +53,17 @@
 }
 
 .clousureContainer {
-  width: 205px;
+  width: 300px;
   height: 18px;
   opacity: 80%;
   color: var(--gray-400);
   font-weight: 400px;
-  font-size: 12px;
-  margin-top: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 20px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .exclamationIcon {
@@ -48,14 +86,25 @@
   border-radius: 24px;
   padding: 24px;
   gap: 8px;
+  border: 1px solid var(--dark-blue-300);
   background-color: var(--dark-blue-300);
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
   font-weight: 400px;
   font-size: 16px;
   line-height: 19.36px;
   align-content: center;
   color: var(--light-blue-300);
   border: none;
+  cursor: pointer;
 }
+
+.firstButton:hover {
+  border: 1px solid var(--dark-blue-300);
+  color: black;
+  background-color: var(--gray-200);
+}
+
 .secondButton {
   width: 328px;
   height: 67px;
@@ -63,9 +112,18 @@
   padding: 24px;
   gap: 8px;
   border: 1px solid var(--dark-blue-300);
-  background-color: #d8dfe8;
+  background-color: var(--gray-200);
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
   font-weight: 400px;
   font-size: 16px;
   line-height: 19.36px;
   align-content: center;
+  cursor: pointer;
+}
+
+.secondButton:hover {
+  color: white;
+  border: 1px solid var(--dark-blue-300);
+  background-color: var(--dark-blue-300);
 }
