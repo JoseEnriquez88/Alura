@@ -1,0 +1,44 @@
+.mainContainer {
+  background-color: #ffffff;
+  border-radius: 32px;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  width: 335px;
+  margin-top: 200px;
+  background-color: transparent;
+}
+
+.textContainer {
+  background-color: transparent;
+  width: 336px;
+  height: 122px;
+  top: 619px;
+  left: 1032px;
+  opacity: 0px;
+}
+
+.textContainer h1 {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+  /* color: var(--gray-500); */
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.textContainer p {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gray-400);
+}
