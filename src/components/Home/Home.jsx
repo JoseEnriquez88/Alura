@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import styles from "./home.module.css";
 import logo from "/logo/Logo2x.png";
 import { FaExclamationCircle } from "react-icons/fa";
@@ -8,6 +8,8 @@ import Footer from "../Footer/Footer";
 const Home = () => {
   const [inputText, setInputText] = useState("");
   const [processedText, setProcessedText] = useState("");
+  const encryptButtonRef = useRef(null);
+  const decryptButtonRef = useRef(null);
 
   const handleEncrypt = () => {
     const encryptedText = inputText
@@ -27,6 +29,16 @@ const Home = () => {
       .replace(/ober/g, "o")
       .replace(/ufat/g, "u");
     setProcessedText(decryptedText);
+  };
+
+  const handleMouseOver = () => {
+    encryptButtonRef.current.classList.add(styles.firstButtonHover);
+    decryptButtonRef.current.classList.add(styles.secondButtonHover);
+  };
+
+  const handleMouseOut = () => {
+    encryptButtonRef.current.classList.remove(styles.firstButtonHover);
+    decryptButtonRef.current.classList.remove(styles.secondButtonHover);
   };
 
   return (
@@ -58,10 +70,22 @@ const Home = () => {
               Solo letras minúsculas y sin acentos
             </p>
             <div className={styles.buttonContainer}>
-              <button className={styles.firstButton} onClick={handleEncrypt}>
+              <button
+                className={styles.firstButton}
+                onClick={handleEncrypt}
+                onMouseOver={handleMouseOver}
+                onMouseOut={handleMouseOut}
+                ref={encryptButtonRef}
+              >
                 Encriptar
               </button>
-              <button className={styles.secondButton} onClick={handleDecrypt}>
+              <button
+                className={styles.secondButton}
+                onClick={handleDecrypt}
+                onMouseOver={handleMouseOver}
+                onMouseOut={handleMouseOut}
+                ref={decryptButtonRef}
+              >
                 Desencriptar
               </button>
             </div>

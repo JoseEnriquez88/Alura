@@ -101,7 +101,7 @@
   cursor: pointer;
 }
 
-.firstButton:hover {
+.firstButtonHover {
   border: 1px solid var(--dark-blue-300);
   color: black;
   background-color: transparent;
@@ -124,7 +124,7 @@
   cursor: pointer;
 }
 
-.secondButton:hover {
+.secondButtonHover {
   color: white;
   border: 1px solid var(--dark-blue-300);
   background-color: var(--dark-blue-300);
