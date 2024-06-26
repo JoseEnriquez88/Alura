@@ -8,6 +8,7 @@ const Result = () => {
       <div className={styles.textContainer}>
         <h1>Ningún mensaje fue encontrado</h1>
         <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        <button className={styles.copyButton}>Copiar</button>
       </div>
     </div>
   );

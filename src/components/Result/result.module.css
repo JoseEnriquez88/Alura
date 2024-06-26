@@ -42,3 +42,30 @@
   text-align: center;
   color: var(--gray-400);
 }
+
+.copyButton {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  border: 1px solid var(--dark-blue-300);
+  background-color: var(--dark-blue-300);
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 19.36px;
+  align-content: center;
+  color: var(--light-blue-300);
+  border: none;
+  cursor: pointer;
+  margin-top: 117px;
+  display: none;
+}
+
+.copyButton:hover {
+  border: 1px solid var(--dark-blue-300);
+  color: black;
+  background-color: var(--gray-200);
+}
