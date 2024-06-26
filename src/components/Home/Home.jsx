@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
-    <>
+    <div className={styles.wrapper}>
       <a href="https://www.aluracursos.com/" target="_blank">
         <img
           src={logo}
@@ -38,7 +38,7 @@ const Home = () => {
         <Result />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
