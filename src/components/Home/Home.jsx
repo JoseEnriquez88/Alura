@@ -3,7 +3,7 @@ import styles from "./home.module.css";
 import logo from "/logo/Logo2x.png";
 import { FaExclamationCircle } from "react-icons/fa";
 import Result from "../Result/Result";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 
 const Home = () => {
   const [inputText, setInputText] = useState("");
@@ -93,7 +93,7 @@ const Home = () => {
         </div>
         <Result processedText={processedText} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

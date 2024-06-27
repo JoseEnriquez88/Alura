@@ -54,6 +54,7 @@
   top: 851px;
   left: 240px;
   gap: 8px;
+  margin-top: 100px;
 }
 
 .clousureContainer {
@@ -131,11 +132,11 @@
 }
 
 @media (max-width: 768px) {
-  /* .wrapper { */
   .container {
     width: 90vw;
     display: flex;
     flex-direction: column;
+    gap: 50px;
   }
 
   .mainContainer {
@@ -143,7 +144,7 @@
   }
 
   .textareaContainer {
-    width: 600px;
+    width: 100%;
     /* display: none; */
   }
 
@@ -151,5 +152,38 @@
   /* .clousureContainer{ */
   .buttonContainer {
     width: 90vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+  }
+
+  .mainContainer,
+  .textareaContainer {
+    width: 100%;
+  }
+
+  .textarea {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+  }
+
+  /* .actionsContainer{ */
+  /* .clousureContainer{ */
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 158px;
+    margin-left: 15px;
   }
 }
