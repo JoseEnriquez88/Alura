@@ -69,3 +69,10 @@
     margin-top: 500px;
   }
 }
+
+@media (max-width: 375px) {
+  .footer {
+    border-top: 1px solid var(--gray-200);
+    padding-top: 200px;
+  }
+}
