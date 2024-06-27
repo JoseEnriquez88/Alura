@@ -2,10 +2,11 @@
   background-color: #ffffff;
   border-radius: 32px;
   width: 500px;
-  height: 100%;
+  height: 84.3%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 .image {
@@ -17,11 +18,11 @@
 .textContainer {
   background-color: transparent;
   width: 100%;
-  height: 122px;
-  top: 619px;
-  left: 1032px;
-  opacity: 0px;
   color: #000;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .processedText {
@@ -33,6 +34,7 @@
   text-align: left;
   padding: 50px;
   background: transparent;
+  word-break: break-word;
 }
 
 .textContainer h1 {
@@ -41,7 +43,6 @@
   font-size: 24px;
   line-height: 28.8px;
   text-align: center;
-  /* color: var(--gray-500); */
   color: #000;
   margin-bottom: 20px;
 }
@@ -56,22 +57,21 @@
 }
 
 .copyButton {
-  width: 328px;
+  width: 100%;
   height: 67px;
   border-radius: 24px;
   border: 1px solid var(--dark-blue-300);
   background-color: var(--dark-blue-300);
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out,
     color 0.3s ease-in-out;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19.36px;
   align-content: center;
   color: var(--light-blue-300);
   border: none;
   cursor: pointer;
-  margin: 80px;
-  margin-top: 482px;
+  margin-top: 20px;
 }
 
 .copyButton:hover {
@@ -81,18 +81,21 @@
 }
 
 @media (max-width: 768px) {
+  .wrapper {
+    margin-top: 50px;
+  }
+
   .image {
     display: none;
   }
 
   .mainContainer {
     width: 90vw;
-    margin-top: 100px;
   }
 
   .textContainer {
     height: 400px;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,15 +104,20 @@
 
   .processedText {
     text-align: center;
-    line-height: 36px;
+    line-height: 30px;
     font-size: 24px;
-    max-width: 90%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     word-break: break-word;
     overflow-wrap: break-word;
   }
 
   .copyButton {
     margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    padding: 24px;
   }
 
   .textContainer h1 {
@@ -119,5 +127,53 @@
 
   .advice {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    margin-top: 100px;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  .textContainer {
+    max-width: 500px;
+    height: 500px;
+  }
+
+  .processedText {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    width: 279px;
+  }
+
+  .textContainer h1 {
+    width: 263px;
+    height: 58px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+  }
+
+  .advice {
+    width: 263px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .copyButton {
+    width: 100%;
   }
 }
