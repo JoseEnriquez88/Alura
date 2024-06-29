@@ -42,17 +42,17 @@ const Home = () => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.homeWrapper}>
       <a href="https://www.aluracursos.com/" target="_blank">
         <img
           src={logo}
           alt="logo"
-          className={styles.logo}
+          className={styles.homeLogo}
           title="Alura Cursos"
         />
       </a>
-      <div className={styles.container}>
-        <div className={styles.mainContainer}>
+      <div className={styles.homeContainer}>
+        <div className={styles.homeMainContainer}>
           <div className={styles.textareaContainer}>
             <textarea
               name="textarea"
@@ -69,7 +69,7 @@ const Home = () => {
               <FaExclamationCircle className={styles.exclamationIcon} />
               Solo letras minúsculas y sin acentos
             </p>
-            <div className={styles.buttonContainer}>
+            <div className={styles.homeButtonContainer}>
               <button
                 className={styles.firstButton}
                 onClick={handleEncrypt}
@@ -93,7 +93,6 @@ const Home = () => {
         </div>
         <Result processedText={processedText} />
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

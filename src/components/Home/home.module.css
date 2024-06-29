@@ -1,14 +1,14 @@
-.wrapper {
+.homeWrapper {
   height: 100vh;
 }
 
-.logo {
+.homeLogo {
   width: 120px;
   height: 48px;
   margin: 40px 20px 0 0;
 }
 
-.container {
+.homeContainer {
   width: 90%;
   height: 83vh;
   margin: 0 auto;
@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 
-.mainContainer {
+.homeMainContainer {
   margin-top: 50px;
   width: 60%;
 }
@@ -75,7 +75,7 @@
   margin-right: 5px;
 }
 
-.buttonContainer {
+.homeButtonContainer {
   width: 680px;
   height: 67px;
   top: 885px;
