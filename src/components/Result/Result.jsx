@@ -4,8 +4,8 @@ import muñeco from "/images/Muñeco.png";
 const Result = ({ processedText }) => {
   return (
     <>
-      <div className={styles.wrapper}>
-        <div className={styles.mainContainer}>
+      <div className={styles.resultWrapper}>
+        <div className={styles.resultMainContainer}>
           {processedText ? (
             <div className={styles.textContainer}>
               <p className={styles.processedText}>{processedText}</p>

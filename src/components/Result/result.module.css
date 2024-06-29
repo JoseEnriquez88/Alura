@@ -1,4 +1,4 @@
-.mainContainer {
+.resultMainContainer {
   background-color: #ffffff;
   border-radius: 32px;
   width: 500px;
@@ -81,7 +81,7 @@
 }
 
 @media (max-width: 768px) {
-  .wrapper {
+  .resultWrapper {
     margin-top: 50px;
   }
 
@@ -89,7 +89,7 @@
     display: none;
   }
 
-  .mainContainer {
+  .resultMainContainer {
     width: 90vw;
   }
 
@@ -131,11 +131,11 @@
 }
 
 @media (max-width: 375px) {
-  .wrapper {
+  .resultWrapper {
     margin-top: 100px;
   }
 
-  .mainContainer {
+  .resultMainContainer {
     width: 100%;
   }
 
