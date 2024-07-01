@@ -132,14 +132,14 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .homeContainer {
     width: 90vw;
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
 
-  .mainContainer {
+  .homeMainContainer {
     width: 100%;
   }
 
@@ -150,20 +150,20 @@
 
   /* .actionsContainer { */
   /* .clousureContainer{ */
-  .buttonContainer {
+  .homeButtonContainer {
     width: 90vw;
   }
 }
 
 @media (max-width: 375px) {
-  .container {
+  .homeContainer {
     width: 100%;
     display: flex;
     justify-content: space-around;
     gap: 100px;
   }
 
-  .mainContainer,
+  .homeMainContainer,
   .textareaContainer {
     width: 100%;
   }
@@ -179,7 +179,7 @@
   /* .actionsContainer{ */
   /* .clousureContainer{ */
 
-  .buttonContainer {
+  .homeButtonContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
