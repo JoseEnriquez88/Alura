@@ -16,18 +16,18 @@ gaitober" => "gato"</h3>
 <h1>Algunas imágenes de la aplicación.</h1>
 
 <h2>Version desktop</h2>
-<img src="/images/ui/desktop1.png" alt="image" />
+<img src="/public/images/ui/desktop1.png" alt="image" />
 <br />
-<img src="/images/ui/desktop2.png" alt="image" />
+<img src="/public/images/ui/desktop2.png" alt="image" />
 <br/>
-<img src="/images/ui/desktop3.png" alt="image" />
+<img src="/public/images/ui/desktop3.png" alt="image" />
 <hr />
 <h2>Version responsive</h2>
-<img src="/images/ui/responsive1.png" alt="image" />
+<img src="/public/images/ui/responsive1.png" alt="image" />
 <br/>
-<img src="/images/ui/responsive2.png" alt="image" />
+<img src="/public/images/ui/responsive2.png" alt="image" />
 <br/>
-<img src="/images/ui/responsive3.png" alt="image" />
+<img src="/public/images/ui/responsive3.png" alt="image" />
 <br/>
-<img src="/images/ui/responsive4.png" alt="image" />
+<img src="/public/images/ui/responsive4.png" alt="image" />
 <br/>
