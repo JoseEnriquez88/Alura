@@ -62,6 +62,7 @@ const Home = () => {
               onChange={(e) => setInputText(e.target.value)}
               maxLength={200}
               required
+              autoFocus
             ></textarea>
           </div>
           <div className={styles.actionsContainer}>
