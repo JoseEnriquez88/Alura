@@ -1,9 +1,14 @@
 import { useState, useRef } from "react";
+import { motion } from "framer-motion";
 import styles from "./home.module.css";
 import logo from "/logo/Logo2x.png";
 import { FaExclamationCircle } from "react-icons/fa";
 import Result from "../Result/Result";
-// import Footer from "../Footer/Footer";
+import {
+  textAreaVariants,
+  firstButtonVariants,
+  secondButtonVariants,
+} from "../../utilities/motions/variants";
 
 const Home = () => {
   const [inputText, setInputText] = useState("");
@@ -53,7 +58,12 @@ const Home = () => {
       </a>
       <div className={styles.homeContainer}>
         <div className={styles.homeMainContainer}>
-          <div className={styles.textareaContainer}>
+          <motion.div
+            className={styles.textareaContainer}
+            variants={textAreaVariants}
+            initial="initial"
+            animate="animate"
+          >
             <textarea
               name="textarea"
               placeholder="Ingrese el texto aquí"
@@ -64,32 +74,38 @@ const Home = () => {
               required
               autoFocus
             ></textarea>
-          </div>
+          </motion.div>
           <div className={styles.actionsContainer}>
             <p className={styles.clousureContainer}>
               <FaExclamationCircle className={styles.exclamationIcon} />
               Solo letras minúsculas y sin acentos
             </p>
-            <div className={styles.homeButtonContainer}>
-              <button
+            <motion.div className={styles.homeButtonContainer}>
+              <motion.button
                 className={styles.firstButton}
                 onClick={handleEncrypt}
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
                 ref={encryptButtonRef}
+                variants={firstButtonVariants}
+                initial="initial"
+                animate="animate"
               >
                 Encriptar
-              </button>
-              <button
+              </motion.button>
+              <motion.button
                 className={styles.secondButton}
                 onClick={handleDecrypt}
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
                 ref={decryptButtonRef}
+                variants={secondButtonVariants}
+                initial="initial"
+                animate="animate"
               >
                 Desencriptar
-              </button>
-            </div>
+              </motion.button>
+            </motion.div>
           </div>
         </div>
         <Result processedText={processedText} />
