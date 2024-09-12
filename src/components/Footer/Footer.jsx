@@ -1,4 +1,5 @@
 import styles from "./footer.module.css";
+const URL = "https://my-portfolio-gamma-olive.vercel.app/";
 
 const Footer = () => {
   return (
@@ -6,7 +7,7 @@ const Footer = () => {
       <div className={styles.mainContainer}></div>
       <div className={styles.textContainer}>
         Desarrollado por:
-        <a href="https://portfolio-pi-ten-78.vercel.app/" target="_blank">
+        <a href={URL} target="_blank">
           Jose Enriquez
           <img src="/logo.png" alt="logo" className={styles.logo} />
         </a>
